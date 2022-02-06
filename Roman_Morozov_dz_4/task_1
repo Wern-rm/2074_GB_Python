@@ -1,0 +1,38 @@
+wern@MacBook-Air-Morozov ~ % pip show pillow
+Name: Pillow
+Version: 9.0.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages
+Requires:
+Required-by:
+wern@MacBook-Air-Morozov ~ %
+
+wern@MacBook-Air-Morozov ~ % pip install pillow==9.0.1
+Collecting pillow==9.0.1
+  Downloading Pillow-9.0.1-1-cp310-cp310-macosx_11_0_arm64.whl (2.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 7.3 MB/s eta 0:00:00
+Installing collected packages: pillow
+  Attempting uninstall: pillow
+    Found existing installation: Pillow 9.0.0
+    Uninstalling Pillow-9.0.0:
+      Successfully uninstalled Pillow-9.0.0
+Successfully installed pillow-9.0.1
+
+wern@MacBook-Air-Morozov ~ % source env/bin/activate
+(env) wern@MacBook-Air-Morozov ~ %
+
+(env) wern@MacBook-Air-Morozov ~ % pip show pillow
+WARNING: Package(s) not found: pillow
+
+(env) wern@MacBook-Air-Morozov ~ % pip install pillow
+Collecting pillow
+  Using cached Pillow-7.1.1-cp310-cp310-macosx_11_0_arm64.whl (2.7 MB)
+Installing collected packages: pillow
+Successfully installed pillow-7.1.1
+
+(env) wern@MacBook-Air-Morozov ~ % deactivate
+wern@MacBook-Air-Morozov ~ %
