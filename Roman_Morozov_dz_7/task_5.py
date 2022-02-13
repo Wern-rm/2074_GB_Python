@@ -1,4 +1,5 @@
 import os
+import json
 
 
 def get_dict_size(path: str):
@@ -28,4 +29,5 @@ def get_dict_size(path: str):
 
 
 if __name__ == '__main__':
-    print(get_dict_size('/Users/wern/Documents/GB_Python/Roman_Morozov_dz_7'))
+    with open('Roman_Morozov_dz_7_summary.json', 'w', encoding='utf-8') as fw:
+        json.dump(get_dict_size('/Users/wern/Documents/GB_Python/Roman_Morozov_dz_7'), fw, ensure_ascii=False, indent=2)
